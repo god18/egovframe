@@ -30,5 +30,8 @@
 
 	운영시에 본 컨트롤을 사용하여 메뉴를 구성하는 경우 성능 문제를 일으키거나<p/>
 	사용자별 메뉴 구성에 오류를 발생할 수 있음<p />
+
+<c:import url="EgovUnitContent2.jsp"></c:import>
+
 </body>
 </html>
