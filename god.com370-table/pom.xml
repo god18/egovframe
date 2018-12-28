@@ -120,9 +120,9 @@
 
 		<dependency>
 			<groupId>god</groupId>
-			<artifactId>com370</artifactId>
+			<artifactId>com370-core</artifactId>
 			<version>1.0.0</version>
-			<scope>compile</scope>
+			<scope>test</scope>
 		</dependency>
 
 	</dependencies>

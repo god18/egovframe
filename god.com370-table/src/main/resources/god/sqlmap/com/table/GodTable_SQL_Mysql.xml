@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="GodTable">
+
+	<insert id="GodTableDAO.insert" parameterClass="god.com.table.service.GodTableVO">
+<![CDATA[
+/*
+GodTableDAO.insert
+*/
+insert into TB_GOD_TABLE (
+    TABLE_ID, /* 테이블ID */
+    TABLE_NM, /* 테이블명 */
+    COLUMN_NM, /* 컬럼명 */
+    COLUMN_NM2, /* 컬럼명2 */
+    COLUMN_NM3,
+    COLUMN_NM4,
+    COLUMN_NM5,
+    COLUMN_NM6,
+    COLUMN_NM7,
+    COLUMN_NM8,
+    COLUMN_NM9,
+    COLUMN_NM10,
+    COLUMN_NM11,
+    COLUMN_NM12,
+    COLUMN_NM13,
+    COLUMN_NM14,
+    COLUMN_NM15,
+    COLUMN_NM16,
+    COLUMN_NM17,
+    COLUMN_NM18,
+    COLUMN_NM19,
+    COLUMN_NM20,
+    COLUMN_NM21,
+    COLUMN_NM22,
+    COLUMN_NM23,
+    COLUMN_NM24,
+    COLUMN_NM25,
+    COLUMN_NM26,
+    COLUMN_NM27,
+    COLUMN_NM28,
+    COLUMN_NM29,
+    COLUMN_NM30,
+    USE_AT, /* 사용여부 */
+    FRST_REGIST_PNTTM,
+    FRST_REGISTER_ID
+) values (
+	#tableId#,
+	#tableNm#,
+	#columnNm#,
+	#columnNm2#,
+	#columnNm3#,
+	#columnNm4#,
+	#columnNm5#,
+	#columnNm6#,
+	#columnNm7#,
+	#columnNm8#,
+	#columnNm9#,
+	#columnNm10#,
+	#columnNm11#,
+	#columnNm12#,
+	#columnNm13#,
+	#columnNm14#,
+	#columnNm15#,
+	#columnNm16#,
+	#columnNm17#,
+	#columnNm18#,
+	#columnNm19#,
+	#columnNm20#,
+	#columnNm21#,
+	#columnNm22#,
+	#columnNm23#,
+	#columnNm24#,
+	#columnNm25#,
+	#columnNm26#,
+	#columnNm27#,
+	#columnNm28#,
+	#columnNm29#,
+	#columnNm30#,
+	#useAt#,
+	#frstRegistPnttm#,
+	#frstRegisterId#
+)
+]]>
+	</insert>
+
+	<update id="GodTableDAO.update" parameterClass="god.com.table.service.GodTableVO">
+<![CDATA[
+/*
+GodTableDAO.update
+*/
+update TB_GOD_TABLE set
+    COLUMN_NM = #columnNm#, /* 컬럼명 */
+    COLUMN_NM2 = #columnNm2#, /* 컬럼명2 */
+    COLUMN_NM3 = #columnNm3#,
+    COLUMN_NM4 = #columnNm4#,
+    COLUMN_NM5 = #columnNm5#,
+    COLUMN_NM6 = #columnNm6#,
+    COLUMN_NM7 = #columnNm7#,
+    COLUMN_NM8 = #columnNm8#,
+    COLUMN_NM9 = #columnNm9#,
+    COLUMN_NM10 = #columnNm10#,
+    COLUMN_NM11 = #columnNm11#,
+    COLUMN_NM12 = #columnNm12#,
+    COLUMN_NM13 = #columnNm13#,
+    COLUMN_NM14 = #columnNm14#,
+    COLUMN_NM15 = #columnNm15#,
+    COLUMN_NM16 = #columnNm16#,
+    COLUMN_NM17 = #columnNm17#,
+    COLUMN_NM18 = #columnNm18#,
+    COLUMN_NM19 = #columnNm19#,
+    COLUMN_NM20 = #columnNm20#,
+    COLUMN_NM21 = #columnNm21#,
+    COLUMN_NM22 = #columnNm22#,
+    COLUMN_NM23 = #columnNm23#,
+    COLUMN_NM24 = #columnNm24#,
+    COLUMN_NM25 = #columnNm25#,
+    COLUMN_NM26 = #columnNm26#,
+    COLUMN_NM27 = #columnNm27#,
+    COLUMN_NM28 = #columnNm28#,
+    COLUMN_NM29 = #columnNm29#,
+    COLUMN_NM30 = #columnNm30#,
+    LAST_UPDT_PNTTM = #lastUpdtPnttm#,
+    LAST_UPDUSR_ID = #lastUpdusrId#
+where TABLE_ID = #tableId#
+]]>
+	</update>
+
+
+
+	<delete id="GodTableDAO.delete" parameterClass="god.com.table.service.GodTableVO">
+<![CDATA[
+/*
+GodTableDAO.delete
+*/
+update TB_GOD_TABLE set
+    USE_AT = 'N'
+where TABLE_ID = #tableId#
+]]>
+	</delete>
+
+	<select id="GodTableDAO.select" parameterClass="god.com.table.service.GodTableVO"
+		resultClass="god.com.table.service.GodTableVO">
+<![CDATA[
+/*
+GodTableDAO.select
+*/
+select 
+    TABLE_ID as tableId, /* 테이블ID */
+    TABLE_NM as tableNm, /* 테이블명 */
+    COLUMN_NM as columnNm, /* 컬럼명 */
+    COLUMN_NM2 as columnNm2, /* 컬럼명2 */
+    COLUMN_NM3 as columnNm3,
+    COLUMN_NM4 as columnNm4,
+    COLUMN_NM5 as columnNm5,
+    COLUMN_NM6 as columnNm6,
+    COLUMN_NM7 as columnNm7,
+    COLUMN_NM8 as columnNm8,
+    COLUMN_NM9 as columnNm9,
+    COLUMN_NM10 as columnNm10,
+    COLUMN_NM11 as columnNm11,
+    COLUMN_NM12 as columnNm12,
+    COLUMN_NM13 as columnNm13,
+    COLUMN_NM14 as columnNm14,
+    COLUMN_NM15 as columnNm15,
+    COLUMN_NM16 as columnNm16,
+    COLUMN_NM17 as columnNm17,
+    COLUMN_NM18 as columnNm18,
+    COLUMN_NM19 as columnNm19,
+    COLUMN_NM20 as columnNm20,
+    COLUMN_NM21 as columnNm21,
+    COLUMN_NM22 as columnNm22,
+    COLUMN_NM23 as columnNm23,
+    COLUMN_NM24 as columnNm24,
+    COLUMN_NM25 as columnNm25,
+    COLUMN_NM26 as columnNm26,
+    COLUMN_NM27 as columnNm27,
+    COLUMN_NM28 as columnNm28,
+    COLUMN_NM29 as columnNm29,
+    COLUMN_NM30 as columnNm30,
+    USE_AT as useAt, /* 사용여부 */
+    FRST_REGIST_PNTTM as frstRegistPnttm,
+    FRST_REGISTER_ID as frstRegisterId,
+    LAST_UPDT_PNTTM as lastUpdtPnttm,
+    LAST_UPDUSR_ID as lastUpdusrId
+from TB_GOD_TABLE
+where TABLE_ID = #tableId#
+]]>
+		<isNotEmpty property="useAt">
+<![CDATA[
+    and USE_AT = #useAt#
+]]>
+		</isNotEmpty>
+	</select>
+
+	<select id="GodTableDAO.selectList" parameterClass="god.com.table.service.GodTableVO"
+		resultClass="egovframework.rte.psl.dataaccess.util.EgovMap">
+<![CDATA[
+/*
+GodTableDAO.selectList
+*/
+select
+    TABLE_ID, /* 테이블ID */
+    TABLE_NM, /* 테이블명 */
+    COLUMN_NM, /* 컬럼명 */
+    COLUMN_NM2, /* 컬럼명2 */
+    COLUMN_NM3,
+    COLUMN_NM4,
+    COLUMN_NM5,
+    COLUMN_NM6,
+    COLUMN_NM7,
+    COLUMN_NM8,
+    COLUMN_NM9,
+    COLUMN_NM10,
+    COLUMN_NM11,
+    COLUMN_NM12,
+    COLUMN_NM13,
+    COLUMN_NM14,
+    COLUMN_NM15,
+    COLUMN_NM16,
+    COLUMN_NM17,
+    COLUMN_NM18,
+    COLUMN_NM19,
+    COLUMN_NM20,
+    COLUMN_NM21,
+    COLUMN_NM22,
+    COLUMN_NM23,
+    COLUMN_NM24,
+    COLUMN_NM25,
+    COLUMN_NM26,
+    COLUMN_NM27,
+    COLUMN_NM28,
+    COLUMN_NM29,
+    COLUMN_NM30,
+    USE_AT, /* 사용여부 */
+    FRST_REGIST_PNTTM,
+    FRST_REGISTER_ID,
+    LAST_UPDT_PNTTM,
+    LAST_UPDUSR_ID
+from TB_GOD_TABLE
+where 1 = 1
+]]>
+		<isNotEmpty property="useAt">
+<![CDATA[
+    and USE_AT = #useAt#
+]]>
+		</isNotEmpty>
+	</select>
+
+</sqlMap>

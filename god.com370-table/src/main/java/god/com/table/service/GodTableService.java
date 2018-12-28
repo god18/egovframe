@@ -2,6 +2,8 @@ package god.com.table.service;
 
 import java.util.List;
 
+import org.springframework.ui.Model;
+
 import egovframework.rte.psl.dataaccess.util.EgovMap;
 
 public interface GodTableService {
@@ -19,5 +21,15 @@ public interface GodTableService {
 	EgovMap selectEgovMap(GodTableVO vo);
 
 	List<EgovMap> selectList(GodTableVO vo);
+
+	void insertForm(GodTableVO vo, Model model);
+
+	void insert(GodTableVO vo, Model model);
+
+	void updateForm(GodTableVO vo, Model model);
+
+	void update(GodTableVO vo, Model model);
+
+	void delete(GodTableVO vo, Model model);
 
 }
