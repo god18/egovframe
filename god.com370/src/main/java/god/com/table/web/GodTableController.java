@@ -74,7 +74,8 @@ public class GodTableController {
 	@RequestMapping("/table/uploadExcel.do")
 	public String uploadExcel(GodTableVO vo, Model model, MultipartHttpServletRequest request) {
 		parseFileInf(vo, model, request);
-		service.uploadExcel(vo, model);
+		// service.uploadExcel(vo, model);
+		service.uploadExcel2(vo, model);
 		return "god/com/table/uploadExcel";
 	}
 

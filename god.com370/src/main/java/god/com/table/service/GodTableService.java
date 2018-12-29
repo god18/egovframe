@@ -34,4 +34,6 @@ public interface GodTableService {
 
 	void uploadExcel(GodTableVO vo, Model model);
 
+	void uploadExcel2(GodTableVO vo, Model model);
+
 }

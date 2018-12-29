@@ -11,19 +11,17 @@
 </head>
 <body>
 
-
-	<ul>
-		<li><a
-			href="<c:url value="/EgovPageLink.do?link=god/com/link/NewFile" />"
-			target="_blank">NewFile</a></li>
-		<li><a
-			href="<c:url value="/EgovPageLink.do?link=god/com/link/NewFile1" />"
-			target="_blank">NewFile1</a></li>
-		<li><a
-			href="<c:url value="/EgovPageLink.do?link=god/com/link/NewFile2" />"
-			target="_blank">NewFile2</a></li>
-	</ul>
-
+	<!-- 	<ul> -->
+	<!-- 		<li><a -->
+	<%-- 			href="<c:url value="/EgovPageLink.do?link=god/com/link/NewFile" />" --%>
+	<!-- 			target="_blank">NewFile</a></li> -->
+	<!-- 		<li><a -->
+	<%-- 			href="<c:url value="/EgovPageLink.do?link=god/com/link/NewFile1" />" --%>
+	<!-- 			target="_blank">NewFile1</a></li> -->
+	<!-- 		<li><a -->
+	<%-- 			href="<c:url value="/EgovPageLink.do?link=god/com/link/NewFile2" />" --%>
+	<!-- 			target="_blank">NewFile2</a></li> -->
+	<!-- 	</ul> -->
 
 	<form:form commandName="godTableVO" action="delete.do">
 
@@ -133,7 +131,7 @@
 		});
 	</script>
 
-	<c:import url="selectList-log.jsp" />
+	<%-- 	<c:import url="selectList-log.jsp" /> --%>
 
 </body>
 </html>

@@ -233,6 +233,10 @@ div.HStyle34
 <%-- <form:input path="tableNm" /> --%>
 <input id="tableNm" name="tableNm" type="text" value="<c:out value="${empty godTableVO.tableNm ? '[별지 제10호서식] 산림기술자 자격증(신규발급¸ 재발급)신청서' : godTableVO.tableNm}" escapeXml="true" />" />
 
+<form:input path="useAt" />
+<%-- <form:input path="lastUpdtPnttm" /> --%>
+<%-- <form:input path="lastUpdusrId" /> --%>
+
 <input type="submit" value="${submit}">
 <a href="selectList.do">목록</a>
 

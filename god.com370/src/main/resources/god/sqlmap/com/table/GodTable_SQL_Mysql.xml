@@ -120,6 +120,7 @@ update TB_GOD_TABLE set
     COLUMN_NM28 = #columnNm28#,
     COLUMN_NM29 = #columnNm29#,
     COLUMN_NM30 = #columnNm30#,
+    USE_AT = #useAt#,
     LAST_UPDT_PNTTM = #lastUpdtPnttm#,
     LAST_UPDUSR_ID = #lastUpdusrId#
 where TABLE_ID = #tableId#
