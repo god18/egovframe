@@ -278,11 +278,11 @@
 			</exclusions>
 		</dependency>
 
-		<dependency>
-			<groupId>xmlbeans</groupId>
-			<artifactId>xbean</artifactId>
-			<version>2.2.0</version>
-		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>xmlbeans</groupId> -->
+		<!-- <artifactId>xbean</artifactId> -->
+		<!-- <version>2.2.0</version> -->
+		<!-- </dependency> -->
 
 		<dependency>
 			<groupId>commons-fileupload</groupId>
@@ -451,11 +451,11 @@
 			<version>2.9.7</version>
 		</dependency>
 
-		<dependency>
-			<groupId>god</groupId>
-			<artifactId>com370-table</artifactId>
-			<version>1.0.0</version>
-		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>god</groupId> -->
+		<!-- <artifactId>com370-table</artifactId> -->
+		<!-- <version>1.0.0</version> -->
+		<!-- </dependency> -->
 
 	</dependencies>
 

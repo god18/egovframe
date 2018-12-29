@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,6 +10,19 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+
+	<ul>
+		<li><a
+			href="<c:url value="/EgovPageLink.do?link=god/com/link/NewFile" />"
+			target="_blank">NewFile</a></li>
+		<li><a
+			href="<c:url value="/EgovPageLink.do?link=god/com/link/NewFile1" />"
+			target="_blank">NewFile1</a></li>
+		<li><a
+			href="<c:url value="/EgovPageLink.do?link=god/com/link/NewFile2" />"
+			target="_blank">NewFile2</a></li>
+	</ul>
 
 
 	<form:form commandName="godTableVO" action="delete.do">
@@ -99,6 +113,27 @@
 		</table>
 
 	</form:form>
+
+	<c:import url="selectList-FileUploads.jsp" />
+
+	<script type="text/javascript"
+		src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"
+		integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i"
+		crossorigin="anonymous"></script>
+
+	<c:set var="scriptSrc">${pageContext.request.requestURI}</c:set>
+	<c:set var="scriptSrc">${fn:replace(scriptSrc, '/WEB-INF/jsp', '/js')}</c:set>
+	<c:set var="scriptSrc">${fn:replace(scriptSrc, '.jsp', '.js')}</c:set>
+	<script type="text/javascript" src="${scriptSrc}"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			fn_table_onload();
+		});
+	</script>
+
+	<c:import url="selectList-log.jsp" />
 
 </body>
 </html>
